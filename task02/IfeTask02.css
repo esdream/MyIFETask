@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.naviBar {
+    height: 60px;
+    background: #333333;
+}
+.NaviBaiduLogo {
+    height: 60px;
+}
+.displayElement {
+    display: none;
+}
