@@ -42,6 +42,7 @@
     width: 85px;
     position: relative;
     top: 30%;
+    color: #000;
 }
 .naviBar .naviLinkContainer .naviLink a {
     color: white;
@@ -58,9 +59,9 @@
     margin-left: 1.5%;
     margin-top: 20px;
     padding: 20px;
-    -webkit-box-shadow: inset -3px -3px 0px #999;
-    -moz-box-shadow: inset -3px -3px 0px #999;
-    box-shadow: inset -3px -3px 0px #999;
+    -webkit-box-shadow: 3px 3px 0px #999;
+    -moz-box-shadow: 3px 3px 0px #999;
+    box-shadow: 3px 3px 0px #999;
     line-height: 180%;
 }
 .content h2 {
@@ -74,7 +75,7 @@
     font-size: small;
     margin:10px 0 10px 0;
 }
-.content p:not(.essayInfo.tableInfo) {
+.content p:not(.essayInfo) {
     text-indent: 2em;
 }
 .content .contentList {
@@ -140,9 +141,39 @@
 .sideBar h3 {
     float: left;
     clear: right;
-
+    margin-top: 8px;
+    margin-left: 8px;
 }
-
+.sideBar .sideBarTable {
+    width: 100%;
+    float: left;
+    border-style: none;
+    border-spacing: 10px 8px;
+}
+.sideBar .sideBarTable th, td {
+    border-style: none;
+    vertical-align: top;
+}
+.sideBar .sideBarTable .leftInfoLabel {
+    text-align: right;
+}
+.sideBar .sideBarTable .rightForm {
+    text-align: left;
+    width: 70%;
+}
+.sideBar .sideBarTable .reminder {
+    font-size: smaller;
+    color: #999;
+}
+.sideBar .sideBarTable input[type=radio], input[type=checkbox] {
+    margin-left: 3px;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+.sideBar .sideBarTable .profileText {
+    width: 90%;
+    font-size: 16px;
+}
 .sideBar .submitButton {
     float: left;
     height: 40px;
@@ -158,6 +189,18 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    -webkit-box-shadow: 0 5px #999;
+    -moz-box-shadow: 0 5px #999;
+    box-shadow: 0 5px #999;
+}
+.sideBar .submitButton:hover {
+    background-color: #3f5fcf;
+}
+.sideBar .submitButton:active {
+    -webkit-box-shadow: 0 2px #666;
+    -moz-box-shadow: 0 2px #666;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
 }
 
 .footer p {

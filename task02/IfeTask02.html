@@ -140,30 +140,62 @@
                 <div class="verticalLine"></div><h3>这里以后是一个侧栏，这是侧栏的标题</h3>
             </div>
             <h4 class="hiddenElement">侧栏注册窗口标题</h4>
-            <div><span>请输入邮箱地址:</span><input type="text" name="email" placeholder="这是一个文本输入框"></div>
-            <p>邮箱地址请按要求输入</p>
-            <div><span>请输入密码:</span><input type="password" name="password1" placeholder="这是一个文本输入框"><span>请重复输入密码:</span><input type="password" name="password2" placeholder="这是一个文本输入框"></div>
-            <p>密码请为6-16位英文数字</p>
-            <div>
-                <span>性别:</span>
-                <span>男</span><input type="radio" checked="checked" name="gender" value="male">
-                <span>女</span><input type="radio" name="gender" value="female">
-                <span>城市:</span>
-                <select name="city" id="SelectOfCity">
-                    <option value="北京" selected="selected">北京</option>
-                    <option value="上海">上海</option>
-                    <option value="南京">南京</option>
-                    <option value="广州">广州</option>
-                    <option value="深圳">深圳</option>
-                </select>
-                <span>爱好:</span>
-                <input type="checkbox" name="hobby"><span>运动</span>
-                <input type="checkbox" name="hobby"><span>艺术</span>
-                <input type="checkbox" name="hobby"><span>科学</span>
-                <span>个人描述:</span>
-                <textarea name="profile" cols="30" rows="5">这是一个多行输入框，输入您的个人描述</textarea>
-                <input type="submit" value="确认提交" class="submitButton">
-            </div>
+            <table class="sideBarTable">
+                <tr>
+                    <td class="leftInfoLabel"><label>请输入邮箱地址</label></td>
+                    <td class="rightForm"><input type="text" name="email" placeholder="这是一个文本输入框"></td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"></td>
+                    <td class="rightForm reminder"><span>邮箱地址请按要求输入</span></td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"><label>请输入密码</label></td>
+                    <td class="rightForm"><input type="password" name="password1"></td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"><span>请重复输入密码</span></td>
+                    <td class="rightForm"><input type="password" name="password2"></td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"></td>
+                    <td class="rightForm reminder"><span>密码请为6-16位英文数字</span></td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"><label>性别</label></td>
+                    <td class="rightForm">
+                        <input type="radio" checked="checked" name="gender" value="male"><label>男</label>
+                        <input type="radio" name="gender" value="female"><label>女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"><label>城市</label></td>
+                    <td class="rightForm">
+                        <select name="city" id="SelectOfCity">
+                            <option value="北京" selected="selected">北京</option>
+                            <option value="上海">上海</option>
+                            <option value="南京">南京</option>
+                            <option value="广州">广州</option>
+                            <option value="深圳">深圳</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"><label>爱好</label></td>
+                    <td class="rightForm">
+                        <input type="checkbox" name="hobby"><span>运动</span>
+                        <input type="checkbox" name="hobby"><span>艺术</span>
+                        <input type="checkbox" name="hobby"><span>科学</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftInfoLabel"><label>个人描述</label></td>
+                    <td class="rightForm">
+                        <textarea class="profileText" name="profile" cols="30" rows="5">这是一个多行输入框，输入您的个人描述</textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="确认提交" class="submitButton">
         </div>
         <div class="footer">
             <footer>
