@@ -23,20 +23,24 @@ body {
     float: left;
     width: 200px;
 }
-.container .content {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
+.container .leftBar .nameOfTeam {
     float: left;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.container .content {
+    margin-left: 220px;
+    margin-right: 140px;
+    padding: 20px;
 }
 .container .rightBar {
     padding: 20px;
-    float: left;
+    float: right;
     width: 120px;
 }
 .logoOfTeam,.logoOfMember {
     float: left;
-    clear: both;
     width: 80px;
     height: 80px;
     border: 1px solid #999999;
