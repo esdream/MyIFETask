@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+}
+.container {
+    padding: 20px;
+    width: 100%;
+    overflow: auto;
+    background-color: #eee;
+    border: 1px solid #999999;
+}
+.container>* {
+    background: white;
+    border: 1px solid #999999;
+}
+
+.container .leftBar {
+    padding: 20px;
+    float: left;
+    width: 200px;
+}
+.container .content {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    float: left;
+}
+.container .rightBar {
+    padding: 20px;
+    float: left;
+    width: 120px;
+}
+.logoOfTeam,.logoOfMember {
+    float: left;
+    clear: both;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999999;
+    margin-top: 20px;
+}
+.firstImg {
+    margin-top: 0;
+}
