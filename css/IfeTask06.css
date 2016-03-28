@@ -1,0 +1,28 @@
+.newspaper {
+    width: 980px;
+    height: 1386px;
+}
+.content {
+    width: 892px;
+    height: 1386px;
+    margin: 0 auto;
+}
+
+.content .header-box {
+    border-bottom: 2px solid #938e8c;
+}
+.content .header-box .top-red-box {
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+    float: left;
+}
+.content .header-box .top-red-box>a {
+    font: 12px "黑体";
+    color: #fff;
+}
+.content .header-box>span {
+    font: 12px "黑体";
+    color: #d45d5c;
+    float: right;
+}
