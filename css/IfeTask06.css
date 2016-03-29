@@ -1,6 +1,8 @@
 .newspaper {
     width: 980px;
     height: 1386px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #888;
 }
 .content {
     width: 892px;
@@ -73,4 +75,134 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+.content .top .topTextContainer .titleBox {
+    height: 40px;
+    position: relative;
+}
+.content .top .topTextContainer .titleBox .titleText {
+    font-size: 17px;
+    color: #000;
+    display: inline-block;
+    position: absolute;
+    border-bottom: 2px solid #000;
+    left: 0;
+    bottom: 0;
+}
+.content .top .topTextContainer .titleBox .titleText>span {
+    font-size: 24px;
+}
+.content .top .topTextContainer .tinyText {
+    font: 12px "楷体";
+    color: #676767;
+    margin-top: 4px;
+    line-height: 10px;
+}
+.content .top .topTextContainer .largeText {
+    font-size:116px;
+    color: #75b86b;
+    font-style: oblique;
+    position: absolute;
+    left: -18px;
+}
+.content .top .topTextContainer .number {
+    font-size: 55px;
+    color: #cc8091;
+    position: absolute;
+    left: 10px;
+    bottom: -13px;
+}
+.content .top .topTextContainer .largeCSS {
+    font-size: 21px;
+    color: #cc8091;
+    position: absolute;
+    left: 95px;
+    bottom: 10px;
+}
+.content .top .topTextContainer .tinyCSS {
+    font-size: 12px;
+    color: #cc8091;
+    position: absolute;
+    left: 95px;
+    bottom: -2px;
+}
+
+.content .middle {
+    margin-top: 40px;
+    width: 641px;
+    height: 170px;
+}
+.content .middle .title {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.content .middle .what {
+    width: 236px;
+    float: left;
+}
+.content .middle .what>span {
+    color: #418c59;
+}
+.content .middle .what>p {
+    margin-top: 8px;
+    font: 12px "宋体";
+    color: #767777;
+    line-height: 16px;
+}
+.content .middle .when {
+    width: 198px;
+    float: left;
+    margin-left: 20px;
+}
+.content .middle .when>span {
+    color: #d2994f;
+}
+.content .middle .when>p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #231815;
+    line-height: 16px;
+    opacity: 0.7;
+    /*兼容IE8以及更早版本*/
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+.content .middle .how {
+    width: 167px;
+    float: left;
+    margin-left: 20px;
+}
+.content .middle .how>span {
+    color: #cc7680;
+}
+.content .middle .how>p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #231815;
+    line-height: 16px;
+    opacity: 0.7;
+    /*兼容IE8以及更早版本*/
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+.content .middle .how .reference {
+    margin-top: 20px;
+}
+.content .middle .how .reference>span {
+    font-style: oblique;
+    color: #cd4a48;
+}
+
+.content .bottom {
+    margin-top: 70px;
+}
+.content .bottom .leftTop .en {
+    font: bold 42px "黑体";
+    color: #11456b;
+    line-height: 16px;
+}
+.content .bottom .leftTop .cn {
+    font: bold 33px "黑体";
+    color: #11456b;
 }
