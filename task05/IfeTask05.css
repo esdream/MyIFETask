@@ -1,28 +1,36 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: "Microsoft YaHei UI";
+    padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: "Microsoft YaHei UI";
 }
 html {
+    width: 100%;
     height: 100%;
 }
 body {
+    width: 100%;
     min-height: 100%;
-}
-.backgroundDiv {
     background: #ddd;
-    overflow: auto;
 }
-
-.hiddenElement {
-    display: none;
+@media (max-width: 1000px) {
+    .main .content .largeImg {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 900px) {
+    .main .sideBar {
+        float: right;
+    }
+    .main .content {
+        margin-right: 400px;
+    }
 }
 
 .naviBar,.footer {
-    float: left;
     width: 100%;
     height: 60px;
     background-color: #333;
@@ -57,60 +65,63 @@ body {
     color: #aaa;
 }
 
-.content {
-    background: #fff;
-    float: left;
-    width: 97%;
-    margin-left: 1.5%;
-    margin-top: 20px;
+.main {
     padding: 20px;
+}
+.main .content {
+    background: #fff;
+    /*margin-right: 400px;*/
+    margin-bottom: 20px;
+    padding: 20px;
+    min-width: 380px;
     -webkit-box-shadow: 3px 3px 0px #999;
     -moz-box-shadow: 3px 3px 0px #999;
     box-shadow: 3px 3px 0px #999;
     line-height: 180%;
 }
-.content h2 {
+.main .content h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.content h3 {
+.main .content h3 {
     color: #333333;
 }
-.content .essayInfo {
+.main .content .essayInfo {
     font-size: small;
     margin:10px 0 10px 0;
 }
-.content p:not(.essayInfo) {
+.main .content p:not(.essayInfo) {
     text-indent: 2em;
 }
-.content .contentList {
+.main .content .contentList {
     text-indent: 2em;
     list-style: none;
 }
 
-.imageOfContent>figure {
-    margin: 20px;
-    margin-left: 40px;
+.main .imageOfContent {
+    overflow: auto;
+}
+.main .imageOfContent>figure {
+    float: left;
+    margin: 10px;
     border: 1px solid #999999;
     width: 120px;
     height: 120px;
 }
-.imageOfContent>figure>figcaption {
+.main .imageOfContent>figure>figcaption {
     font-size: small;
     text-align: center;
 }
-.imageOfContent>figure>img {
+.main .imageOfContent>figure>img {
     width: 90%;
     height: auto;
     margin-left: 5%;
     margin-top: 5px;
 }
-
-.tableOfContent ol {
+.main .tableOfContent ol {
     margin-left: 3em;
 }
-
-.tableOfContent table, th, td {
+.main .tableOfContent table, th, td {
     border:1px solid #ccc;
     border-collapse: collapse;
 }
@@ -118,68 +129,69 @@ body {
     width: 100%;
     font-size: 14px;
 }
-.tableOfContent table th, td {
+.main .tableOfContent table th, td {
     padding-left: 5px;
 }
-.tableOfContent table th {
+.main .tableOfContent table th {
     text-align: left;
     color: #fff;
     background: #333;
 }
-.tableOfContent table .total {
+.main .tableOfContent table .total {
     font-weight: bold;
     background-color: #ccc;
 }
 
-.sideBar {
-    width: 94%;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.main .sideBar {
+    /*float: right;*/
+    width: 380px;
     font-size: small;
+    margin-right: 0;
+    overflow: auto;
 }
-.sideBar .verticalLine {
+.main .sideBar .verticalLine {
     float: left;
     width: 3px;
     height: 40px;
     background-color: #ccc;
 }
-.sideBar h3 {
+.main .sideBar h3 {
     float: left;
     clear: right;
     margin-top: 8px;
     margin-left: 8px;
 }
-.sideBar .sideBarTable {
+.main .sideBar .sideBarTable {
     width: 100%;
     float: left;
     border-style: none;
     border-spacing: 10px 8px;
 }
-.sideBar .sideBarTable th, td {
+.main .sideBar .sideBarTable th, td {
     border-style: none;
     vertical-align: top;
 }
-.sideBar .sideBarTable .leftInfoLabel {
+.main .sideBar .sideBarTable .leftInfoLabel {
     text-align: right;
 }
-.sideBar .sideBarTable .rightForm {
+.main .sideBar .sideBarTable .rightForm {
     text-align: left;
-    width: 70%;
+    width: 60%;
 }
-.sideBar .sideBarTable .reminder {
+.main .sideBar .sideBarTable .reminder {
     font-size: smaller;
     color: #999;
 }
-.sideBar .sideBarTable input[type=radio], input[type=checkbox] {
+.main .sideBar .sideBarTable input[type=radio], input[type=checkbox] {
     margin-left: 3px;
     margin-right: 1px;
     vertical-align: middle;
 }
-.sideBar .sideBarTable .profileText {
-    width: 90%;
+.main .sideBar .sideBarTable .profileText {
+    width: 80%;
     font-size: 16px;
 }
-.sideBar .submitButton {
+.main .sideBar .submitButton {
     float: left;
     height: 40px;
     width: 97%;
@@ -198,10 +210,10 @@ body {
     -moz-box-shadow: 0 5px #999;
     box-shadow: 0 5px #999;
 }
-.sideBar .submitButton:hover {
+.main .sideBar .submitButton:hover {
     background-color: #3f5fcf;
 }
-.sideBar .submitButton:active {
+.main .sideBar .submitButton:active {
     -webkit-box-shadow: 0 2px #666;
     -moz-box-shadow: 0 2px #666;
     box-shadow: 0 2px #666;
@@ -209,6 +221,8 @@ body {
 }
 
 .footer p {
+    margin-top: -20px;
     text-align: center;
-    margin-top: 20px;
+    position: relative;
+    top: 20px;
 }
