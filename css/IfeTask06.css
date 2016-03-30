@@ -217,7 +217,7 @@
 }
 .content .bottom .leftBottom {
     width: 415px;
-    height: 464px;
+    height: 450px;
     padding-top: 20px;
 }
 .content .bottom .leftBottom .firstText {
@@ -247,7 +247,7 @@
     width: 458px;
     height: 257px;
     position: absolute;
-    top: 0;
+    top: 19px;
     right: 0;
 }
 .content .bottom .rightTop .bottomMask {
@@ -264,6 +264,8 @@
 .content .bottom .rightTop .greenBorder {
     height: 44px;
     position: absolute;
+    bottom: 8.5px;
+    left: 40px;
     border-left: 3px solid #72b16a;
 
 }
@@ -273,4 +275,134 @@
     font-size: 26px;
     line-height: 44px;
     opacity: 1;
+}
+.content .bottom .rightTop .greenBorder .midImgText2 {
+    font-size:12px;
+    font-style: oblique;
+    color: #72b16a;
+    margin-left: 4.8px;
+}
+.content .bottom .rightBottom {
+    width: 458px;
+    height: 318px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ededd5;
+}
+.content .bottom .rightBottom .catalogContainer {
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top:30px;
+    width: 100%;
+}
+.content .bottom .rightBottom .catalog {
+    width: 100%;
+    height: 40px;
+}
+.content .bottom .rightBottom .catalog .triangle {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom: 10px solid #11456b;
+}
+.content .bottom .rightBottom .catalog .logText {
+    display: inline-block;
+    color: #5a5b5b;
+    font-family: "宋体";
+    font-size: 16px;
+    text-align: left;
+    vertical-align: bottom;
+}
+.content .bottom .rightBottom .catalog .obliqueText {
+    font:12px "宋体";
+    color: #5a5b5b;
+    text-align: right;
+    font-style: oblique;
+}
+.content .bottom .rightBottom .bottomRedBox {
+    width: 260px;
+    height: 160px;
+    background-color: #d45d5c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.content .bottom .rightBottom .bottomRedBox .textBox {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.content .bottom .rightBottom .bottomRedBox .textBox .largeZero {
+    font: 110px "Microsoft YaHei UI";
+    color: #fff;
+    float: left;
+    margin-left: 10px;
+}
+.content .bottom .rightBottom .bottomRedBox .textBox .rightTextBox {
+    height: 86px;
+    border-left: 2px solid #fff;
+    float: left;
+    margin-left: 5px;
+    padding-left: 5px;
+    margin-top: 27px;
+}
+.content .bottom .rightBottom .bottomRedBox .textBox .rightTextBox .largeEn  {
+    font:oblique 21px "黑体";
+    color: #fff;
+}
+.content .bottom .rightBottom .bottomRedBox .textBox .rightTextBox .tinyHW {
+    font: oblique 12px "黑体";
+    color: #fff;
+}
+.content .bottom .rightBottom .citeBox {
+    width: 199px;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+.content .bottom .rightBottom .quotationTop {
+    font: 72px "黑体";
+    color: #d45d5c;
+    float: left;
+    margin-left: -40px;
+    margin-top: -10px;
+    margin-bottom: -60px;
+    margin-right: 10px;
+}
+.content .bottom .rightBottom .quotationBottom {
+    font: 72px "黑体";
+    color: #d45d5c;
+    float: right;
+    position: absolute;
+    right: -14px;
+    bottom: -10px;
+}
+.content .bottom .rightBottom .bottomHW {
+    font: oblique 14px "黑体";
+    color: #5a5b5b;
+}
+
+.content .footerBox {
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #938e8c;
+    position: relative;
+}
+.content .footerBox a {
+    font: 12px "黑体";
+    color: #d45d5c;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    text-decoration: none;
 }
