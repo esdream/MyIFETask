@@ -34,6 +34,20 @@ body {
     margin-right: 140px;
     padding: 20px;
 }
+.container .content * {
+    font-family: "Microsoft YaHei UI";
+}
+.container .content h2 {
+    font-weight: bold;
+    line-height: 50px;
+}
+.container .content h3 {
+    font-weight: bold;
+    line-height: 40px;
+}
+.container .content p {
+    text-indent: 2rem;
+}
 .container .rightBar {
     padding: 20px;
     float: right;
