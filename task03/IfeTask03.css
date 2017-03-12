@@ -25,7 +25,7 @@ body {
 }
 .container .leftBar .nameOfTeam {
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 18px;
     font-weight: bold;
 }
