@@ -9,10 +9,11 @@
 html {
     width: 100%;
     height: 100%;
+    font-size: 67.5%;
 }
 body {
     width: 100%;
-    font:12px "MicrosoftYaHei","微软雅黑","STXihei","华文细黑",serif;
+    font:1.2rem "MicrosoftYaHei","微软雅黑","STXihei","华文细黑",serif;
     background-color: #ffffff;
 }
 
@@ -23,7 +24,7 @@ body {
     clear: both;
 }
 /*
-如果需要兼容IE6,7，则应按照以下方式清除浮动。使用:before是为了在IE6,7中更好地渲染代码。如果使用了{box-sizing:border-box;}（不兼容IE6，7），那么设置:bofore和zoom也就没有必要了
+如果需要兼容IE6,7，则应按照以下方式清除浮动。使用:before是为了在IE6,7中更好地渲染代码。如果使用了{box-sizing:border-box;}（不兼容IE6，7），那么设置:before和zoom也就没有必要了
 .clearfix:before,.clearfix:after {
     content: "";
     display: table;
