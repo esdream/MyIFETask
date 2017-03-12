@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    padding: 20px;
+}
+.container {
+    padding: 20px;
+    width: 100%;
+    overflow: auto;
+    background-color: #eee;
+    border: 1px solid #999999;
+    font-size: 1.6rem;
+}
+.container>* {
+    background: white;
+    border: 1px solid #999999;
+}
+
+.container .leftBar {
+    padding: 20px;
+    float: left;
+    width: 200px;
+}
+.container .leftBar .nameOfTeam {
+    float: left;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.container .content {
+    margin-left: 220px;
+    margin-right: 140px;
+    padding: 20px;
+}
+.container .content * {
+    font-family: "Microsoft YaHei UI";
+}
+.container .content h2 {
+    font-weight: bold;
+    line-height: 50px;
+}
+.container .content h3 {
+    font-weight: bold;
+    line-height: 40px;
+}
+.container .content p {
+    text-indent: 2rem;
+}
+.container .rightBar {
+    padding: 20px;
+    float: right;
+    width: 120px;
+}
+.logoOfTeam,.logoOfMember {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999999;
+    margin-top: 20px;
+}
+.firstImg {
+    margin-top: 0;
+}

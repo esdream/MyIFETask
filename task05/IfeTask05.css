@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei UI";
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    min-height: 100%;
+    background: #ddd;
+}
+@media (max-width: 1000px) {
+    .main .content .largeImg {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 900px) {
+    .main .sideBar {
+        float: right;
+    }
+    .main .content {
+        margin-right: 400px;
+    }
+}
+
+.naviBar,.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+}
+.naviBar .NaviBaiduLogo {
+    height: 70%;
+    float: left;
+    /*margin-left: 2%;*/
+    position: relative;
+    top: 15%;
+    left: 3%;
+}
+.naviBar .naviLinkContainer {
+    float: right;
+    height: 100%;
+}
+.naviBar .naviLinkContainer .naviLink {
+    float: left;
+    font-size: 12px;
+    width: 85px;
+    position: relative;
+    top: 30%;
+    color: #000;
+}
+.naviBar .naviLinkContainer .naviLink a {
+    color: white;
+    text-decoration: none;
+}
+.naviBar .naviLinkContainer .naviLink a:hover {
+    color: #aaa;
+}
+
+.main {
+    padding: 20px;
+}
+.main .content {
+    background: #fff;
+    /*margin-right: 400px;*/
+    margin-bottom: 20px;
+    padding: 20px;
+    min-width: 380px;
+    -webkit-box-shadow: 3px 3px 0px #999;
+    -moz-box-shadow: 3px 3px 0px #999;
+    box-shadow: 3px 3px 0px #999;
+    line-height: 180%;
+}
+.main .content h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main .content h3 {
+    color: #333333;
+}
+.main .content .essayInfo {
+    font-size: small;
+    margin:10px 0 10px 0;
+}
+.main .content p:not(.essayInfo) {
+    text-indent: 2em;
+}
+.main .content .contentList {
+    text-indent: 2em;
+    list-style: none;
+}
+
+.main .imageOfContent {
+    overflow: auto;
+}
+.main .imageOfContent>figure {
+    float: left;
+    margin: 10px;
+    border: 1px solid #999999;
+    width: 120px;
+    height: 120px;
+}
+.main .imageOfContent>figure>figcaption {
+    font-size: small;
+    text-align: center;
+}
+.main .imageOfContent>figure>img {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.main .tableOfContent ol {
+    margin-left: 3em;
+}
+.main .tableOfContent table, th, td {
+    border:1px solid #ccc;
+    border-collapse: collapse;
+}
+.tableOfContent table {
+    width: 100%;
+    font-size: 14px;
+}
+.main .tableOfContent table th, td {
+    padding-left: 5px;
+}
+.main .tableOfContent table th {
+    text-align: left;
+    color: #fff;
+    background: #333;
+}
+.main .tableOfContent table .total {
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+.main .sideBar {
+    /*float: right;*/
+    width: 380px;
+    font-size: small;
+    margin-right: 0;
+    overflow: auto;
+}
+.main .sideBar .verticalLine {
+    float: left;
+    width: 3px;
+    height: 40px;
+    background-color: #ccc;
+}
+.main .sideBar h3 {
+    float: left;
+    clear: right;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.main .sideBar .sideBarTable {
+    width: 100%;
+    float: left;
+    border-style: none;
+    border-spacing: 10px 8px;
+}
+.main .sideBar .sideBarTable th, td {
+    border-style: none;
+    vertical-align: top;
+}
+.main .sideBar .sideBarTable .leftInfoLabel {
+    text-align: right;
+}
+.main .sideBar .sideBarTable .rightForm {
+    text-align: left;
+    width: 60%;
+}
+.main .sideBar .sideBarTable .reminder {
+    font-size: smaller;
+    color: #999;
+}
+.main .sideBar .sideBarTable input[type=radio], input[type=checkbox] {
+    margin-left: 3px;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+.main .sideBar .sideBarTable .profileText {
+    width: 80%;
+    font-size: 16px;
+}
+.main .sideBar .submitButton {
+    float: left;
+    height: 40px;
+    width: 97%;
+    margin-left: 1.5%;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #3355cf;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px #999;
+    -moz-box-shadow: 0 5px #999;
+    box-shadow: 0 5px #999;
+}
+.main .sideBar .submitButton:hover {
+    background-color: #3f5fcf;
+}
+.main .sideBar .submitButton:active {
+    -webkit-box-shadow: 0 2px #666;
+    -moz-box-shadow: 0 2px #666;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+.footer p {
+    margin-top: -20px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
