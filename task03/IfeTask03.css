@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    font-size: 62.5%;
-}
 body {
     padding: 20px;
 }
@@ -15,7 +12,6 @@ body {
     overflow: auto;
     background-color: #eee;
     border: 1px solid #999999;
-    font-size: 1.6rem;
 }
 .container>* {
     background: white;
